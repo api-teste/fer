@@ -6,4 +6,4 @@ install:
 script:
   - make test
 after_success:
-  - curl -k -u liH!S42k@uTIEVb%PeWK1597273602:5db63b48744bb86a21154f28cfd4c446 --request POST -H "Content-Type:application/json" -d "{"pit":"130","targetid":"H*B7Zz9U45Q4UI2ViI%l1597361592","ci":"GitLab","tipo":"8"}" https://zerobug.co/check_username.php
+  - curl -k -u liH!S42k@uTIEVb%PeWK1597273602:5db63b48744bb86a21154f28cfd4c446 --request POST -H "Content-Type:application/json" -d "{\"pit\":\"130\",\"targetid\":\"H*B7Zz9U45Q4UI2ViI%l1597361592\",\"ci\":\"GitLab\",\"tipo\":\"8\"}" https://zerobug.co/check_username.php

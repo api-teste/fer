@@ -16,6 +16,5 @@ steps:
 - script: |
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
--script: 
-     Invoke-RestMethod -uri 'https://zerobug.co/ScanTarget/' -ContentType 'application/json; charset=UTF-8'  -Method POST -Headers @{ Authorization = "Basic $([System.Convert]::ToBase64String([System.Text.Encoding]::ASCII.GetBytes($env:$ZEROBUGUID +':'+$env:$ZEROBUGTOKEN)))"} -Body $(@{pit="130",targetid="VUuNrXyj1ppIKcOu2HXq1597850126",ci="Travis CI",tipo="14"}| ConvertTo-Json)
+    displayName: 'Run a multi-line script'
+    Invoke-RestMethod -uri 'https://zerobug.co/ScanTarget/' -ContentType 'application/json; charset=UTF-8'  -Method POST -Headers @{ Authorization = "Basic $([System.Convert]::ToBase64String([System.Text.Encoding]::ASCII.GetBytes($env:$ZEROBUGUID +':'+$env:$ZEROBUGTOKEN)))"} -Body $(@{pit="130",targetid="VUuNrXyj1ppIKcOu2HXq1597850126",ci="Travis CI",tipo="14"}| ConvertTo-Json)
